@@ -1,0 +1,9 @@
+#lang racket
+(provide fibonacci)
+(define (fibonacci n)
+  (cond ((= n 1) 1)
+        ((= n 2) 1)
+        ((+ (fibonacci(- n 2)) (fibonacci(- n 1))))
+    )
+  )
+(command-line #:args (v) (fatorial (string->number v)))

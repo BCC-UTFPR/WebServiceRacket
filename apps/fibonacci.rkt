@@ -1,7 +1,8 @@
 #lang racket
-(define (fib n)
-  (cond ((= n 1) 1)
-        ((= n 2) 1)
-        ((+ (fib(- n 2)) (fib(- n 1))))
+(define (fibonacci v)
+  (cond ((= v 1) 1)
+        ((= v 2) 1)
+        ((+ (fibonacci(- v 2)) (fibonacci(- v 1))))
     )
   )
+(command-line #:args (v) (fibonacci (string->number v)))

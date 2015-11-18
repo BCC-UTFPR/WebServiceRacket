@@ -1,0 +1,9 @@
+#lang racket
+(provide inverte)
+(define inverte
+  (lambda (l)
+    (let ((len (length l)))
+      (build-list len
+                  (lambda (i)
+                    (list-ref l (- len i 1)))))))
+(command-line #:args (v) (inverte (map string->number(regexp-split #px"," v))))

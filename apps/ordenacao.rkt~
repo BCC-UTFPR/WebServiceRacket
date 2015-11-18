@@ -9,5 +9,4 @@
          [smaller (filter (lambda (x) (< x hd)) tail)]
          [bigger (filter (lambda (x) (>= x hd)) tail)])
       (append (quicksort smaller) (list hd) (quicksort bigger)))))
-
 (command-line #:args (v) (quicksort (map string->number (regexp-split #px"," v))))

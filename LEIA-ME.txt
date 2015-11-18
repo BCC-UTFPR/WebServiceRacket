@@ -1,0 +1,19 @@
+Trabalho de Linguagens de Programação
+Aluno: Luiz Felipe Fronchetti Dias
+Professor: Rodrigo Hubner
+
+* Foi implementado um Serviço Web na linguagem 
+de programação Racket. As funções são chamadas através
+da URL no padrão REST.
+  Todas as funções foram desenvolvidas com sucesso.
+ Para abrir o programa utilize o arquivo Servidor.rkt,
+ ele contém exemplos de todos os exercícios propostos através
+ de url's na própria página inicial.
+
+IMPORTANTE: Para fazer funcionar, altere os caminhos (path's) dos arquivos
+para cada função shell script presente no Servidor.rkt (Utilize CTRL-F ";; Alterar caminhos acima") . Exemplo,
+
+De:
+racket /home/todos/alunos/cm/a1552309/Documentos/apps/apps/membro.rkt
+Para:
+racket /home/professor/Documentos/TrabalhoLinguagens/apps/membro.rkt

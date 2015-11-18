@@ -1,7 +1,8 @@
 #lang racket
 
-(define (membro? item seq)
-  (sequence-ormap 
-   (lambda (x)
-     (equal? item x))
-   seq))
+(define (membro e v)
+  (if (null? v) "O valor não é membro!"
+  (if (= e (car v)) "O valor é membro!" (membro e (cdr v)))
+  )
+ )
+(command-line #:args (e v) (membro (string->number e) (map string->number (regexp-split #px"," v))))

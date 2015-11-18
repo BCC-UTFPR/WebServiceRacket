@@ -1,0 +1,8 @@
+#lang racket
+
+(define (membro x lista)
+  (if (= x (car lista))
+         1
+      (membro x (cdr lista))))
+(provide (all-defined-out))
+(command-line #:args (v_a,v_b) (membro (string->number v_a) (map string->number (regexp-split #px"," v_b)))))

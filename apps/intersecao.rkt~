@@ -1,0 +1,13 @@
+#lang racket
+
+(define contem member)
+;cons aloca uma nova lista com o valor do primeiro elemento da lista
+(define (interseccao a b)
+  (if (null? a)
+      '()
+      (if (member (car a) b)
+          (cons (car a) (interseccao (cdr a) b))
+          (interseccao (cdr a) b))))
+
+(provide (all-defined-out))
+
