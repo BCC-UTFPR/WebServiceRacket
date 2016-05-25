@@ -1,5 +1,0 @@
-#lang racket
-
-(define (uniao lista_a lista_b)
-  (append lista_a lista_b))
-(command-line #:args (v_a v_b) (uniao (map string->number (regexp-split #px"," v_a)) (map string->number (regexp-split #px"," v_b))))
